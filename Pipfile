@@ -9,9 +9,12 @@ opencv-python = "*"
 
 [dev-packages]
 "autopep8" = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.6"
 
 [scripts]
 start = "python app.py"
+build = "pyinstaller --clean --add-data 'templates;templates' --add-data 'sample;sample' --add-data 'bin/*;.' -n flaskcam app.py"
+clear = "rm -rf build/ dist/"
