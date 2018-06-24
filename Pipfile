@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+opencv-python = "*"
+
+[dev-packages]
+"autopep8" = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+start = "python app.py"
